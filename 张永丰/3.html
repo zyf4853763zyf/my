@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="css/jquery-ui.min.css" media="screen" title="no title" charset="utf-8">
+  <style media="screen">
+    #accordion{
+      width: 200px;
+      height: 300px;
+      background: gray;
+    }
+  
+  </style>
+  <script type="text/javascript">
+  $(function(){
+    $('#accordion').accordion();
+    $('p').hover(function(){
+      $(this).css("background-color","yellow");
+    });
+    $('p').mouseout(function(){
+      $(this).css("background-color","white");
+    })
+
+  });
+
+  </script>
+</head>
+<body>
+  <div id="accordion">
+      <h3>AjaxShake</h3>
+
+      <div>
+        <p>javascript</p>
+        <p>JAVA</p>
+        <p>HAHA</p>
+        <p>HTML</p>
+      </div>
+      <h3>JSonp Exe</h3>
+      <div>
+        <p>javascript</p>
+        <p>JAVA</p>
+        <p>HAHA</p>
+        <p>HTML</p>
+      </div>
+      <h3>Friend Sites</h3>
+      <div>
+        <p>javascript</p>
+        <p>JAVA</p>
+        <p>HAHA</p>
+        <p>HTML</p>
+      </div>
+      <h3>Others</h3>
+      <div>
+        <p>javascript</p>
+        <p>JAVA</p>
+        <p>HAHA</p>
+        <p>HTML</p>
+      </div>
+  </div>
+
+</body>
+</html>

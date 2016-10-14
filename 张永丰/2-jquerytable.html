@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>学生信息表格</title>
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <style>
+  table {
+    border-collapse: collapse;
+    border: 1px solid gray;
+    width: 300px;
+    text-align: center;
+  }
+
+  td,th {
+    border: 1px solid gray;
+  }
+  </style>
+  <script type="text/javascript">
+  $(document).ready(function(){
+
+    $("td").hover(function(){
+      $(this).css("box-shadow","5px 5px 5px  black");
+    })
+    $("td").mouseout(function(){
+      $(this).css("box-shadow","none");
+    })
+
+  });
+
+  </script>
+</head>
+<body>
+  <table>
+    <tr>
+      <td colspan="3">个人信息</td>
+      <td>成绩</td>
+    </tr>
+    <tr>
+      <!--每一行需要满足4列才算完整一行  -->
+      <td colspan="2" rowspan="3">总的学生</td>
+      <td>张三</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td>李老八</td>
+      <td>33</td>
+    </tr>
+    <tr>
+      <td>赵四</td>
+      <td>51</td>
+    </tr>
+  </table>
+</body>
+</html>
