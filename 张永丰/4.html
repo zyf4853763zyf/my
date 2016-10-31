@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>第四体</title>
     <style media="screen">
-      div{
+      #div{
         width: 100px;
         height: 100px;
         background: blue;
@@ -15,14 +15,15 @@
     <link rel="stylesheet" href="css/jquery-ui.min.css" media="screen" title="no title" charset="utf-8">
     <script type="text/javascript">
         $(document).ready(function(){
-          $('button').button();
+          $("#button").button();
+
           var flag=1;
-          $('button').click(function(){
+          $('#button').click(function(){
             if (flag) {
-              $('div').hide('shake',{direction:'right'},2000)
+              $('#div').hide('shake',{direction:'right'},2000)
               flag=0;
             }else {
-              $('div').show('shake',{direction:'right'},2000);
+              $('#div').show('shake',{direction:'right'},2000);
               flag=1;
             }
           })
@@ -31,8 +32,9 @@
 
   </head>
   <body>
-    <div></div>
-    <button type="button" name="button">显示/隐藏</button>
+    <div id="div"></div>
+
+    <div id="button" >显示/隐藏</div>
 
   </body>
 </html>
