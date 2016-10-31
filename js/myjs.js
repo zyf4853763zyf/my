@@ -1,4 +1,4 @@
-$(function(){
+$(document).ready(function(){
   $("i.icon").addClass('fa-3x');
   $("div.class-body").addClass('text-justify');
   $('div.hreview').addClass('col-md-3');
